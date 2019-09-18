@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*mobile device*/
+.header {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.logo_image {
+    width: 75px;
+}
+
+.name_title {
+    text-transform: uppercase;
+    font-family: 'trebuchet ms', Arial, Helvetica, sans-serif;
+    color: #2d3c49;
+}
+
+.body {
+    border-top: 2px solid #7d97ad;
+    padding-top: 7px;
+}
+
+.featured_title {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'trebuchet ms', Arial, Helvetica, sans-serif;
+    color:#7d97ad;
+}
+
+.preview {
+    margin: 10px 0;
+    text-align: center;
+    color: #2d3c49;
+}
+
+.image_small {
+    width: 750px;
+}
+
+.work_name {
+    text-transform: uppercase;
+}
+
+/*first breakpoint @ 500px - to increase font size*/
+
+@media screen and (min-width: 500px) {
+    .name_title, .featured_section {
+        font-size: 150%;
+    }
+}
+
+/*second breakpoint @ 750px - flexbox*/
+
+@media screen and (min-width:750px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo, .name_title {
+        width: 50%;
+        justify-content: space-between;
+        text-align: left;
+    }
+    .logo_image {
+        width: 33%;
+        text-align: left;
+    }
+    .name_title {
+        text-align: right;
+        margin-top: 5vw;
+    }
+    .name {
+        font-size: 4vw;
+    }
+    .title {
+        font-size: 2vw;
+    }
+
+    .body {
+        width: 100%;
+        display: flex;
+    }
+
+    .image_large {
+        width: 100%
+
+    }
+
+    .featured_title {
+        text-align:left;
+        font-size: 3vw;
+        margin-left: 5px;
+    }
+    .featured_section {
+        width: 100%;
+        display: flex;
+        margin: 5px 0;
+        
+    }
+    .preview {
+        width: 33.33%;
+        margin: 0 15px 0 0;
+    }
+
+    .preview:last-child {
+        margin-right: 0;
+    }
+
+    .image_small {
+        width: 100%;
+    }
+    
+    .desc {
+        font-size: 2vw;
+    }
+} 
+
+@media screen and (min-width: 1500px) {
+    .global {
+        width: 1500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
