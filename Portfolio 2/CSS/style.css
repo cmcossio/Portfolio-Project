@@ -14,11 +14,11 @@ img {
     padding-bottom: 5px;
 }
 
-.logo_image {
+.logo-image {
     width: 75px;
 }
 
-.name_title {
+.name-title {
     text-transform: uppercase;
     font-family: 'trebuchet ms', Arial, Helvetica, sans-serif;
     color: #2d3c49;
@@ -29,7 +29,7 @@ img {
     padding-top: 7px;
 }
 
-.featured_title {
+.featured-title {
     margin-top: 20px;
     text-align: center;
     font-family: 'trebuchet ms', Arial, Helvetica, sans-serif;
@@ -42,18 +42,18 @@ img {
     color: #2d3c49;
 }
 
-.image_small {
+.image-small {
     width: 750px;
 }
 
-.work_name {
+.work-name {
     text-transform: uppercase;
 }
 
 /*first breakpoint @ 500px - to increase font size*/
 
 @media screen and (min-width: 500px) {
-    .name_title, .featured_section {
+    .name-title, .featured-section {
         font-size: 150%;
     }
 }
@@ -65,22 +65,27 @@ img {
         display: flex;
         justify-content: space-between;
     }
-    .logo, .name_title {
+
+    .logo, .name-title {
         width: 50%;
         justify-content: space-between;
         text-align: left;
     }
-    .logo_image {
+
+    .logo-image {
         width: 33%;
         text-align: left;
     }
-    .name_title {
+
+    .name-title {
         text-align: right;
         margin-top: 5vw;
     }
+
     .name {
         font-size: 4vw;
     }
+
     .title {
         font-size: 2vw;
     }
@@ -90,22 +95,22 @@ img {
         display: flex;
     }
 
-    .image_large {
-        width: 100%
-
+    .image-large {
+        width: 100%;
     }
 
-    .featured_title {
+    .featured-title {
         text-align:left;
         font-size: 3vw;
         margin-left: 5px;
     }
-    .featured_section {
+
+    .featured-section {
         width: 100%;
         display: flex;
-        margin: 5px 0;
-        
+        margin: 5px 0;   
     }
+
     .preview {
         width: 33.33%;
         margin: 0 15px 0 0;
@@ -114,15 +119,26 @@ img {
     .preview:last-child {
         margin-right: 0;
     }
-
-    .image_small {
-        width: 100%;
-    }
     
+    .preview-image {
+        overflow: hidden;
+        padding-top: 52%;
+        position: relative;
+    }
+
+    .image-small {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
     .desc {
         font-size: 2vw;
     }
 } 
+
+/*final breakpoint for auto-margins above 1500px*/
 
 @media screen and (min-width: 1500px) {
     .global {
